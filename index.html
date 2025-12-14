@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Marketplace</title>
+  </head>
+  <body>
+    <div class="mm-shell">
+      <header class="mm-header">
+        <div class="mm-brand">
+          <div class="mm-logo" aria-hidden="true"></div>
+          <div>
+            <div class="mm-title">Mini Marketplace</div>
+            <div class="mm-subtitle">
+              Mahsulotlar (Vanilla JS) + Savat (React)
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="mm-main">
+        <section class="mm-panel" aria-label="Mahsulotlar">
+          <div class="mm-panel-header">
+            <h2 class="mm-panel-title">Mahsulotlar</h2>
+          </div>
+          <div id="products-root"></div>
+        </section>
+
+        <section class="mm-panel" aria-label="Savat">
+          <div id="cart-root"></div>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
